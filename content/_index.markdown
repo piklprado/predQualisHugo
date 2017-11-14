@@ -2,37 +2,35 @@
 title: Home
 ---
 
-[<img src="https://simpleicons.org/icons/github.svg" style="max-width:15%;min-width:40px;float:right;" alt="Github repo" />](https://github.com/yihui/hugo-xmin)
-
-# HUGO XMIN
-
-## _Keep it simple, but not simpler_
-
-**XMin** is a Hugo theme written by [Yihui Xie](https://yihui.name) in about four hours: half an hour was spent on the Hugo templates, and 3.5 hours were spent on styling. The main motivation for writing this theme was to provide a really minimal example to beginners of Hugo templates. This XMin theme contains about 130 lines of code in total, including the code in HTML templates and CSS (also counting empty lines).
 
 
-```bash
-find . -not -path '*/exampleSite/*' \( -name '*.html' -o -name '*.css' \) | xargs wc -l
-```
+# Periódicos potencialmente fradulentos no QUALIS
+### 14 de novembro de 2017
 
-```
-       5 ./layouts/404.html
-      18 ./layouts/_default/list.html
-      12 ./layouts/_default/single.html
-      16 ./layouts/_default/terms.html
-       0 ./layouts/partials/foot_custom.html
-       9 ./layouts/partials/footer.html
-       0 ./layouts/partials/head_custom.html
-      20 ./layouts/partials/header.html
-       7 ./static/css/fonts.css
-      51 ./static/css/style.css
-     138 total
-```
+Este sítio mostra um levantamento iniciado em novembro de 2017
+para:
 
-I can certainly further reduce the code, for example, by eliminating the CSS, but I believe a tiny bit CSS can greatly improve readability. You cannot really find many CSS frameworks that only contain 50 lines of code.
+* Identificar periódicos potencialmente fraudulentos listados pelo Sistema QUALIS-CAPES;
+* Estimar a proporção destes periódicos na base QUALIS;
+* Estimar a chance destes periódicos serem detectados pelo sistema QUALIS.
 
-Although it is a minimal theme, it is actually fully functional. It supports pages (including the home page), blog posts, a navigation menu, categories, tags, and RSS. With [a little bit customization](https://github.com/yihui/hugo-xmin/blob/master/exampleSite/layouts/partials/foot_custom.html), it can easily support LaTeX math expressions, e.g.,
 
-`$${\sqrt {n}}\left(\left({\frac {1}{n}}\sum _{i=1}^{n}X_{i}\right)-\mu \right)\ {\xrightarrow {d}}\ N\left(0,\sigma ^{2}\right)$$`
+## O QUALIS
 
-All pages not under the root directory of the website are listed below. You can also visit the list page of a single section, e.g., [posts](/post/), or [notes](/note/). See the [About](/about/) page for the usage of this theme.
+O QUALIS é a classificação de todos os periódicos em que participantes dos programas de pós-graduação
+do Brasil publicam seus artigos. A base é usada na avaliação da produção dos programas, um dos
+principais critérios para [Avaliação Quadrienal dos Programa de Pós-Graduação](http://avaliacaoquadrienal.capes.gov.br/), 
+feita pela CAPES.
+
+As coordenações de cada área de conhecimento da CAPES são responsáveis por 
+compilar os títulos de todos os periódicos e classificá-los em uma escala de relevância com os níveis
+A1, A2, B1 a B5 e C. Um mesmo título pode receber níveis diferentes em diferentes áreas. Para saber mais veja:
+
+* Barata, R.C.B. 2016. Dez coisas que você deveria saber sobre o QUALIS. [Revista Bras. de Pós-Graduação.](http://ojs.rbpg.capes.gov.br/index.php/rbpg/article/view/947)
+* [Perguntas frequentes sobre o QUALIS](http://www.capes.gov.br/acessoainformacao/perguntas-frequentes/avaliacao-da-pos-graduacao/7422-qualis), do site da CAPES.
+* [Sobre o QUALIS](https://www.sibi.usp.br/apoio-pesquisador/escrita-publicacao-cientifica/selecao-revistas-publicacao/qualis-periodicos/), da página do Sistema de Bibliotecas da USP.
+
+# Autores
+
+* [Paulo Inácio Prado](http://ecologia.ib.usp.br/let/doku.php?id=engl:prado:start), Depto de Ecologia, Instituto de Biociências, USP. <prado@ib.usp.br>
+* [Roberto André Kraenkel](http://www.ift.unesp.br/users/kraenkel/), Instituto de Física Teórica, UNESP. <kraenkel@ift.unesp.br>

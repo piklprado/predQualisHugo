@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on A minimal Hugo website</title>
+    <title>Hugo on Periódicos predatórios no QUALIS</title>
     <link>/categories/hugo/</link>
-    <description>Recent content in Hugo on A minimal Hugo website</description>
+    <description>Recent content in Hugo on Periódicos predatórios no QUALIS</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>pt-br</language>
     <lastBuildDate>Sun, 14 Feb 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/hugo/index.xml" rel="self" type="application/rss+xml" />

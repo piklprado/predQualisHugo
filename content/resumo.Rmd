@@ -1,0 +1,76 @@
+---
+title: Resumo Executivo
+---
+
+```{r setup, echo=FALSE, warning=FALSE, message=F}
+library(knitr)
+#library(ggplot2)
+library(VennDiagram)
+library(googleVis)
+op <- options(gvis.plot.tag='chart')
+opts_chunk$set(fig.align = 'center', fig.show = 'hold', fig.height = 4,
+               warning = FALSE, message = FALSE, error = FALSE, echo=FALSE)
+options(formatR.arrow = TRUE,width = 90, cache=TRUE)
+source("../static/verifica_predadores_qualis.R")
+```
+
+# 1. Proporção de periódicos predatórios no QUALIS
+
+Dos `r length(unique(qualis2$titulo.abr))` periódicos científicos na base QUALIS da CAPES 
+pelo menos `r round(100*nrow(pred.titles)/length(unique(qualis2$titulo.abr)),1)`% 
+são potencialmente predatórios.
+
+```{r diagrama de venn, fig.width=3, fig.height=3, echo=FALSE, message=FALSE}
+only.omics <- sum(!omics$title%in%beals$title&!omics$title%in%sc.bealsp$title)
+g1 <- draw.pairwise.venn(area1= length(unique(qualis2$titulo.abr)),
+                   area2= nrow(beals) + nrow(sc.bealsp) + only.omics,
+                   cross.area = nrow(pred.titles),
+                   fill = c("red", "green"),
+                   lwd=0,
+                   cat.pos=0,
+                   ext.pos=180,
+                   category=c("QUALIS","Predatórios"),
+                   alpha = c(0.5, 0.5), cex = 1.2, cat.fontface = 4, fontfamily =3,
+                   id=FALSE
+                   )
+grid.draw(g1)
+```
+
+# 2. Capacidade do QUALIS detectar predatórios
+
+* `r round(100*sum(pred.titles$estrato.min=="C")/nrow(pred.titles),1)` % 
+dos títulos potencialmente predatórios 
+foram corretamente classificados no estrato mais baixo (QUALIS C) por pelo menos uma área de conhecimento.
+* No entanto 
+`r round(100*sum(pred.titles$estrato.max!="C")/nrow(pred.titles),1)` %  dos títulos
+foram classificados nos estratos A e B por pelo menos uma área.
+
+##### Proporção dos periódicos potencialmente predatórios por sua melhor e pior classificação nos estratos QUALIS:
+
+```{r barplot prop pred, results='asis', tidy=FALSE}
+t1 <- table(pred.titles$estrato.max)
+t2 <- table(pred.titles$estrato.min)
+df1 <- matrix(c(t1,t2), nrow=2, byrow=TRUE)
+colnames(df1) <- names(t1)
+df1 <- as.data.frame(df1)
+df1$crit <- c("Melhor Classificação","Pior Classificação")
+BC <- gvisBarChart(df1, xvar="crit", yvar=c("A1","A2","B1","B2","B3","B4","B5","C"),
+                   options=list(isStacked="percent", legend.title="Estrato QUALIS"))
+plot(BC)
+```
+
+
+# 3. Conclusões
+
+* Procedimentos de detecção de periódicos predatórios não estão
+incorporados no QUALIS. A pequena proporção destes periódicos
+no total de títulos nos quais os programas de PG brasileiros publicam
+deve estar mais relacionada a opções destes programas do que com a
+capacidade do sistema coibir ou prevenir isso. 
+* Nesta pequena fração a baixa capacidade do sistema de detectar estes periódicos como
+predatórios indica a vulnerabilidade do QUALIS aos predatórios.
+
+# 4.  Recomendações
+* Incluir no QUALIS  critérios explícitos de triagem de periódicos potencialmente predatórios; 
+* Exigir das áreas que explicitem seus critérios para identificar predatórios; 
+* Procedimento para verificar discrepâncias quanto à classificação em predatórios entre áreas.

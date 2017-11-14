@@ -1,0 +1,34 @@
+---
+title: Lista interativa dos títulos potencialmente predatórios no QUALIS
+---
+
+```{r setup, echo=FALSE, warning=FALSE, message=F}
+library(knitr)
+library(DT)
+opts_chunk$set(fig.align = 'center', fig.show = 'hold', fig.height = 4,
+               warning = FALSE, message = FALSE, error = FALSE, echo=FALSE)
+options(formatR.arrow = TRUE,width = 90, cache=TRUE)
+source("../static/verifica_predadores_qualis.R")
+```
+
+A tabela abaixo permite filtrar os títulos potencialmente predatórios
+por área de conhecimento e estrato QUALIS,
+e buscar periódicos pelo título e INSS.
+
+Você pode também usar a caixa de busca para procurar um *string* em
+qualquer lugar da tabela.
+
+
+```{r tabela interativa}
+df1 <- qualis[qualis$predatory&!duplicated(paste(qualis$ISSN, qualis$area)),
+              c("area", "ISSN", "titulo","estrato")]
+df1$area <- factor(df1$area)
+datatable(df1,
+          filter = 'top',
+          colnames=c("Área", "ISSN", "Título", "Estrato QUALIS"),
+          rownames=NULL,
+          #caption="Periódicos potencialmente predatórios no QUALIS 2013-2016, por área de conhecimento e estrato de classificação",
+          options = list(
+              pageLength = 500, autoWidth = TRUE)
+          )
+```

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Metodologia | Periódicos predatórios no QUALIS</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Início</a></li>
+      
+      <li><a href="/metodos/">Metodologia</a></li>
+      
+      <li><a href="/lista/">Lista de predatórios</a></li>
+      
+      <li><a href="/resumo/">Resumo Executivo</a></li>
+      
+      <li><a href="/resultados/">Resultados</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Metodologia</span></h1>
+
+
+</div>
+
+<main>
+<div id="compilacao-de-uma-lista-de-periodicos-potencialmente-predatorios-combinando-as-seguintes-bases" class="section level2">
+<h2>1. Compilação de uma lista de periódicos potencialmente predatórios combinando as seguintes bases:</h2>
+<ul>
+<li><p><a href="/omics.csv">Lista de periódicos publicados pela editora OMICS</a>, uma das maiores editoras reconhecidamente predatórias <a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</p></li>
+<li>Lista de Periódicos com práticas questionáveis criada por Jeffrey Beall. A lista foi tirada do ar<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> mas há cópias disponíveis em vários sites, (e.g. <a href="http://beallslist.weebly.com/" class="uri">http://beallslist.weebly.com/</a>) . Extraímos dessa base de dados:
+<ul>
+<li><a href="/beals.csv">Standalone Journals List</a>: lista de títulos isolados potencialmente predadores, conforme está na base de Beall;</li>
+<li><a href="/beals_publishers_in_scopus.csv">Periódicos no Scopus de editoras que estão na lista de Bealls</a>: periódicos incluídos na base Scopus de 2017 (<a href="https://www.scopus.com/home.uri" class="uri">https://www.scopus.com/home.uri</a>) e que são de editoras incluídas nas lista de Bealls.</li>
+</ul></li>
+</ul>
+</div>
+<div id="cruzamento-com-os-titulos-no-qualis-e-conferencia" class="section level2">
+<h2>2. Cruzamento com os títulos no QUALIS e conferência:</h2>
+<ul>
+<li><a href="/areas.csv">QUALIS</a>: classificação de todos os periódicos por cada área, para a avaliação dos programas no quadriênio 2013-2016 (<a href="https://sucupira.capes.gov.br/" class="uri">https://sucupira.capes.gov.br/</a>);</li>
+</ul>
+</div>
+<div id="codigos-em-r-e-arquivos-resultantes" class="section level2">
+<h2>3. Códigos em R e arquivos resultantes:</h2>
+<ul>
+<li><a href="/verifica_predadores_qualis.R">Código em R de processamento dos dados</a></li>
+<li><a href="/qualis_id_predadores.csv">Base QUALIS com indicação dos potencialmente predatórios</a></li>
+<li><a href="/proporcao_pred_estrato_area.csv">Número de periódicos e de potenciais predatórios por área e estrato</a></li>
+<li><a href="/n_predadores_inclusivo_area.csv">Proporção de potenciais predatórios por área e estrato</a></li>
+</ul>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://en.wikipedia.org/wiki/OMICS_Publishing_Group" class="uri">https://en.wikipedia.org/wiki/OMICS_Publishing_Group</a><a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p><a href="http://www.universityworldnews.com/article.php?story=20170920150122306">Why Beall’s blacklist of predatory journals died. Paul Basken, The Chronicle of Higher Education22 September 2017 Issue No:475</a><a href="#fnref2">↩</a></p></li>
+</ol>
+</div>
+
+</main>
+
+  <footer>
+  <script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  <a href="http://ecologia.ib.usp.br/let/doku.php?id=engl:prado:start">Paulo Inácio Prado</a> &amp;  <a href="http://www.ift.unesp.br/users/kraenkel/">Roberto André Kraenkel</a> 2017 | <a href="https://github.com/piklprado/predatoryQUALIS">Github</a>
+  
+  </footer>
+  </body>
+</html>
+

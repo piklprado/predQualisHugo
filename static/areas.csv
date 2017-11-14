@@ -1,0 +1,50 @@
+area;colegio;grande.area
+ASTRONOMIA / FÍSICA                               ;EXATAS;EXATAS E TERRA
+BIOTECNOLOGIA                                     ;EXATAS;MULTIDISCIPLINAR
+CIÊNCIA DA COMPUTAÇĂO                             ;EXATAS;EXATAS E TERRA
+CIÊNCIAS AMBIENTAIS;EXATAS;MULTIDISCIPLINAR
+ENGENHARIAS I                                     ;EXATAS;ENGENHARIAS
+ENGENHARIAS II                                    ;EXATAS;ENGENHARIAS
+ENGENHARIAS III                                   ;EXATAS;ENGENHARIAS
+ENGENHARIAS IV                                    ;EXATAS;ENGENHARIAS
+ENSINO;EXATAS;MULTIDISCIPLINAR
+GEOCIÊNCIAS                                       ;EXATAS;EXATAS E TERRA
+INTERDISCIPLINAR                                  ;EXATAS;MULTIDISCIPLINAR
+MATEMÁTICA / PROBABILIDADE E ESTATÍSTICA          ;EXATAS;EXATAS E TERRA
+MATERIAIS                                         ;EXATAS;MULTIDISCIPLINAR
+QUÍMICA                                           ;EXATAS;EXATAS E TERRA
+ADMINISTRAÇĂO PÚBLICA E DE EMPRESAS, CIÊNCIAS CONTÁBEIS E TURISMO;HUMANIDADES;SOCIAIS APLICADAS
+ANTROPOLOGIA / ARQUEOLOGIA                        ;HUMANIDADES;HUMANAS
+ARQUITETURA, URBANISMO E DESIGN;HUMANIDADES;SOCIAIS APLICADAS
+ARTES / MÚSICA                                    ;HUMANIDADES;LETRAS E ARTES
+CIÊNCIA POLÍTICA E RELAÇƠES INTERNACIONAIS        ;HUMANIDADES;HUMANAS
+CIÊNCIAS DA RELIGIĂO E TEOLOGIA;HUMANIDADES;HUMANAS
+COMUNICAÇĂO E INFORMAÇĂO;HUMANIDADES;SOCIAIS APLICADAS
+DIREITO                                           ;HUMANIDADES;SOCIAIS APLICADAS
+ECONOMIA                                          ;HUMANIDADES;SOCIAIS APLICADAS
+EDUCAÇĂO                                          ;HUMANIDADES;HUMANAS
+FILOSOFIA;HUMANIDADES;HUMANAS
+GEOGRAFIA                                         ;HUMANIDADES;HUMANAS
+HISTÓRIA                                          ;HUMANIDADES;HUMANAS
+LETRAS / LINGUÍSTICA                              ;HUMANIDADES;LETRAS E ARTES
+PLANEJAMENTO URBANO E REGIONAL / DEMOGRAFIA       ;HUMANIDADES;SOCIAIS APLICADAS
+PSICOLOGIA                                        ;HUMANIDADES;HUMANAS
+SERVIÇO SOCIAL                                    ;HUMANIDADES;SOCIAIS APLICADAS
+SOCIOLOGIA                                        ;HUMANIDADES;HUMANAS
+BIODIVERSIDADE;VIDA;BIOLÓGICAS
+CIÊNCIA DE ALIMENTOS                              ;VIDA;AGRÁRIAS
+CIÊNCIAS AGRÁRIAS I                               ;VIDA;AGRÁRIAS
+CIÊNCIAS BIOLÓGICAS I                             ;VIDA;BIOLÓGICAS
+CIÊNCIAS BIOLÓGICAS II                            ;VIDA;BIOLÓGICAS
+CIÊNCIAS BIOLÓGICAS III                           ;VIDA;BIOLÓGICAS
+EDUCAÇĂO FÍSICA                                   ;VIDA;SAÚDE
+ENFERMAGEM                                        ;VIDA;SAÚDE
+FARMÁCIA                                          ;VIDA;SAÚDE
+MEDICINA I                                        ;VIDA;SAÚDE
+MEDICINA II                                       ;VIDA;SAÚDE
+MEDICINA III                                      ;VIDA;SAÚDE
+MEDICINA VETERINÁRIA                              ;VIDA;AGRÁRIAS
+NUTRIÇĂO;VIDA;SAÚDE
+ODONTOLOGIA                                       ;VIDA;SAÚDE
+SAÚDE COLETIVA                                    ;VIDA;SAÚDE
+ZOOTECNIA / RECURSOS PESQUEIROS                   ;VIDA;AGRÁRIAS
