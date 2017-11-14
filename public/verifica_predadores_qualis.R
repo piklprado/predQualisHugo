@@ -24,9 +24,9 @@ sc.bealsp <- rbind(merge(scopus, bealsp, by.x="publisher.name", by.y="name"),
 sc.bealsp <- sc.bealsp[!duplicated(sc.bealsp$id),]
 sc.bealsp$title <- toupper(sc.bealsp$title)
 ## Number of sources in this list
-nrow(sc.bealsp)
+#nrow(sc.bealsp)
 ##Number of sources cancelled by SCOPUS
-sum(sc.bealsp$cancelled)
+#sum(sc.bealsp$cancelled)
 ## Filtering titles already in Beals list of stand-alone Journals
 sc.bealsp <- sc.bealsp[!(sc.bealsp$title%in%beals$title2),] ## seven titles already in the original list
 ## save in csv
@@ -61,9 +61,9 @@ qualis$omics <- qualis$titulo.abr %in% omics$title
 qualis$predatory <- qualis$pred|qualis$predp|qualis$omics
 
 ## Correcting titles in QUALIS that have been hijacked
-qualis$pred[qualis$ISSN=="1520-6025"] <- FALSE
-qualis$pred[qualis$ISSN=="0163-3864"] <- FALSE
-qualis$pred[qualis$ISSN=="1840-3662"] <- FALSE
+qualis$predatory[qualis$ISSN=="1520-6025"] <- FALSE
+qualis$predatory[qualis$ISSN=="0163-3864"] <- FALSE
+qualis$predatory[qualis$ISSN=="1840-3662"] <- FALSE
 qualis$titulo.abr[qualis$ISSN=="1520-6025"] <- paste(qualis$titulo.abr[qualis$ISSN=="1520-6025"],"no predatory")
 qualis$titulo.abr[qualis$ISSN=="0163-3864"] <- paste(qualis$titulo.abr[qualis$ISSN=="0163-3864"],"no predatory")
 qualis$titulo.abr[qualis$ISSN=="1840-3662"] <- paste(qualis$titulo.abr[qualis$ISSN=="1840-3662"],"no predatory")
@@ -190,9 +190,9 @@ mb3  <- glm(cbind(C,tot.pred)~colegio -1, data=tmp2, family=binomial)
 mb4 <- glm(cbind(C,tot.pred)~ res.area -1, data=tmp2, family=binomial)
 mb5 <- glm(cbind(C,tot.pred)~colegio+res.area -1, data=tmp2, family=binomial)
 mb6 <- glm(cbind(C,tot.pred)~colegio*res.area -1, data=tmp2, family=binomial)
-AICctab(mb0,mb1,mb2,mb3,mb4, mb5, mb6)
+#AICctab(mb0,mb1,mb2,mb3,mb4, mb5, mb6)
 #logist(coef(mb1))
-#logist(confint(mb1))
+#logist(confint(m1))
 
 
 
