@@ -4,21 +4,21 @@ title: Home
 
 ```{r setup, echo=FALSE, warning=FALSE, message=F}
 library(knitr)
-library(ggplot2)
-library(VennDiagram)
-library(googleVis)
-library(DT)
+#library(ggplot2)
+#library(VennDiagram)
+#library(googleVis)
+#library(DT)
 op <- options(gvis.plot.tag='chart')
 opts_chunk$set(fig.align = 'center', fig.show = 'hold', fig.height = 4,
                warning = FALSE, message = FALSE, error = FALSE, echo=FALSE)
 options(formatR.arrow = TRUE,width = 90, cache=TRUE)
-source("../static/verifica_predadores_qualis.R")
+#source("../static/verifica_predadores_qualis.R")
 ```
 
-# Periódicos potencialmente fradulentos no QUALIS
+# Periódicos potencialmente fraudulentos no QUALIS
 ### `r format(Sys.time(), '%d de %B de %Y')`
 
-Este sítio mostra um levantamento iniciado em novembro de 2017
+Este é o sítio de um levantamento iniciado em novembro de 2017
 para:
 
 * Identificar periódicos potencialmente fraudulentos listados pelo Sistema QUALIS-CAPES;

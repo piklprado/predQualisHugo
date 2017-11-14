@@ -1,5 +1,8 @@
 ---
 Title: Resultados completos da análise
+output:
+  blogdown::html_page:
+    toc: true
 ---
 
 ```{r setup, echo=FALSE, warning=FALSE, message=F}
@@ -69,7 +72,7 @@ kable(tmp[order(tmp$ppredAB),c("area","tot","tot.pred","ppred", "ppredAB")],
 
 ```
 
-# Distribuição dos predatórios nos estratos QUALIS
+## Distribuição dos predatórios nos estratos QUALIS
 
 Em tese, o estrato C do QUALIS é destinado aos periódicos que não devem ser considerados na avaliação. Muitas áreas
 explicitam que incluem neste estrato periódicos que não seguem boas práticas editoriais, em alguns casos citando 
@@ -172,7 +175,7 @@ tmp %>%
 ```
 
 
-# Discussão e questões
+# Discusssão
 
 * Uma proporção pequena do total de periódicos é potencialmente predatória. No entanto, a lista de potenciais predatórios que compilamos não está completa. Ainda assim, parece pouco provável que a proporção real
 de títulos potencialmente predatórios nos quais os programas de pós-graduação publicam chegue a 5%. 
@@ -187,7 +190,7 @@ metade do títulos potencialmente predatórios.
 		* No segundo caso, o critério de impacto é substituído ou ponderado pela mera presença em certas bases bibliográficas, além da WoS. SCOPUS, PubMed e Scielo são alguns exemplos. A presença de periódicos predatórios mesmo em bases como a SCOPUS indica que este critério é problemático. Reforça este argumento que cerca de 30% dos títulos de editoras apontadas como predatórias por Bealls foram "descontinuados" da SCOPUS em 2017. Muitas áreas também usam como critério adicional para pontuar no QUALIS o quanto a área publica no periódico, o que evidentemente tem potencial para retroalimentar o uso de periódicos predatórios. Por fim, há vários critérios mais subjetivos de importância dos periódicos, e que muitas vezes não estão claros nos documentos de avaliação.
 * Um ponto importante é que a maioria dos periódicos potencialmente predatórios foi avaliada por mais de uma área, sendo que na maioria dos casos pelo menos uma área os classificou como "C". Vale também notar que nos documentos de área ou de avaliação não há menção explícita a nenhum dos critérios do Bealls ou de outros autores e instituições para detectar periódicos predatórios. 
 
-# Conclusões
+## Conclusões
 
 * Procedimentos de detecção de periódicos predatórios não estão
 incorporados no QUALIS. A pequena proporção destes periódicos
@@ -198,10 +201,11 @@ capacidade do sistema coibir ou prevenir isso.
 predatórios indica a vulnerabilidade do QUALIS aos predatórios.
 
 
-# Recomendações
+## Recomendações
+
 * Incluir no QUALIS  critérios explícitos de triagem de periódicos potencialmente predatórios; 
-* Exigir das áreas que explicitem seus critérios para identificar predatórios; 
-* Procedimento para verificar discrepâncias quanto à classificação em predatórios entre áreas.
+* Recomendar às áreas que explicitem seus critérios para identificar predatórios; 
+* Criar procedimento para verificar discrepâncias entre áreas quanto à classificação em predatórios.
 
 
 [^1]: As dez áreas com maior proporção de títulos potenciais predatórios no estrato C são Engenharias I-IV, Educação Física, Enfermagem, Materiais, Agrárias, Odontologia e Veterinária. Os documentos de avaliação das Engenharias I-III, Materiais e Enfermagem incluem explicitamente este critério de falta boas práticas para classificação no estrato C. A Veterinária usa estrato C na contabilização da produção discente, apesar de sete dos 20 periódicos neste estrato serem potencialmente predatórios. As restantes desta lista não mencionam e aparentemente não usam o estrato C em sua avaliação.

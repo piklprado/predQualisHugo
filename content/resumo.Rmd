@@ -71,6 +71,7 @@ capacidade do sistema coibir ou prevenir isso.
 predatórios indica a vulnerabilidade do QUALIS aos predatórios.
 
 # 4.  Recomendações
+
 * Incluir no QUALIS  critérios explícitos de triagem de periódicos potencialmente predatórios; 
-* Exigir das áreas que explicitem seus critérios para identificar predatórios; 
-* Procedimento para verificar discrepâncias quanto à classificação em predatórios entre áreas.
+* Recomendar às áreas que explicitem seus critérios para identificar predatórios; 
+* Criar procedimento para verificar discrepâncias entre áreas quanto à classificação em predatórios.

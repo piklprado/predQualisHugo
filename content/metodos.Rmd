@@ -20,8 +20,7 @@ source("../static/verifica_predadores_qualis.R")
 
 * Lista de Periódicos com práticas questionáveis criada por Jeffrey Beall. A lista foi tirada do ar[^3] mas há cópias disponíveis em vários sites, (e.g.  http://beallslist.weebly.com/) . Extraímos dessa base de dados:
 	* [Standalone Journals List](/beals.csv): lista de títulos isolados potencialmente predadores, conforme está na base de Beall;
-	* [Periódicos no Scopus de editoras que estão na lista de Bealls](/beals_publishers_in_scopus.csv): periódicos incluídos na base Scopus de 2017 (https://www.scopus.com/home.uri) e que são de editoras incluídas nas lista de Bealls.
-
+	* [Periódicos no Scopus de editoras que estão na lista de Beall](/beals_publishers_in_scopus.csv): periódicos incluídos na base Scopus de 2017 (https://www.scopus.com/home.uri) e que são de editoras incluídas nas lista de Bealls.
 
 
 ## 2. Cruzamento com os títulos no QUALIS e conferência:

@@ -34,4 +34,4 @@ footnotereturnlinkcontents = "↩"
     weight = 5
 [params]
     description = "A website built through Hugo and blogdown."
-    footer = "[Paulo Inácio Prado](http://ecologia.ib.usp.br/let/doku.php?id=engl:prado:start) &  [Roberto André Kraenkel](http://www.ift.unesp.br/users/kraenkel/) 2017 | [Github](https://github.com/piklprado/predatoryQUALIS) "
+    footer = "[Paulo Inácio Prado](http://ecologia.ib.usp.br/let/doku.php?id=engl:prado:start) &  [Roberto André Kraenkel](http://www.ift.unesp.br/users/kraenkel/) 2017 | [Github](https://github.com/piklprado/predQualisHugo) "
