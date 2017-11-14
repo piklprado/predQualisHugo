@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Periódicos predatórios no QUALIS</title>
+    <title>Periódicos predatórios no QUALIS</title>
     <link>/</link>
-    <description>Recent content in Home on Periódicos predatórios no QUALIS</description>
+    <description>Recent content on Periódicos predatórios no QUALIS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     
@@ -56,7 +56,7 @@ Você pode também usar a caixa de busca para procurar um string em qualquer lug
       
       <guid>/resumo/</guid>
       <description>1. Proporção de periódicos predatórios no QUALIS Dos 26477 periódicos científicos na base QUALIS da CAPES pelo menos 1.9% são potencialmente predatórios.
- 2. Capacidade do QUALIS detectar predatórios  76.8 % dos títulos potencialmente predatórios foram corretamente classificados no estrato mais baixo (QUALIS C) por pelo menos uma área de conhecimento. No entanto 67.4 % dos títulos foram classificados nos estratos A e B por pelo menos uma área.  Proporção dos periódicos potencialmente predatórios por sua melhor e pior classificação nos estratos QUALIS: // jsData function gvisDataBarChartID5837623dc27a () { var data = new google.</description>
+ 2. Capacidade do QUALIS detectar predatórios  76.8 % dos títulos potencialmente predatórios foram corretamente classificados no estrato mais baixo (QUALIS C) por pelo menos uma área de conhecimento. No entanto 67.4 % dos títulos foram classificados nos estratos A e B por pelo menos uma área.  Proporção dos periódicos potencialmente predatórios por sua melhor e pior classificação nos estratos QUALIS: // jsData function gvisDataBarChartID23f92d9770ac () { var data = new google.</description>
     </item>
     
   </channel>
