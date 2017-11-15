@@ -2,6 +2,7 @@
 *.RData
 .RData
 .Rhistory
+*.Rhistory
 /classificações_publicadas_todas_as_areas_avaliacao1503422094817-1.csv
 /Scopus_Source_List.xlsx
 /Scopus_Source_List.ods
