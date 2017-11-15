@@ -17,7 +17,7 @@ options(formatR.arrow = TRUE,width = 90, cache=TRUE)
 source("../static/verifica_predadores_qualis.R")
 ```
 
-# 1. Proporção de periódicos predatórios no QUALIS
+# Proporção de periódicos predatórios no QUALIS
 
 Dos `r length(unique(qualis2$titulo.abr))` periódicos científicos na base QUALIS da CAPES 
 pelo menos `r round(100*nrow(pred.titles)/length(unique(qualis2$titulo.abr)),1)`% 
@@ -39,7 +39,7 @@ g1 <- draw.pairwise.venn(area1= length(unique(qualis2$titulo.abr)),
 grid.draw(g1)
 ```
 
-# 2. Capacidade do QUALIS detectar predatórios
+# Capacidade do QUALIS detectar predatórios
 
 * `r round(100*sum(pred.titles$estrato.min=="C")/nrow(pred.titles),1)` % 
 dos títulos potencialmente predatórios 
@@ -87,7 +87,7 @@ tmp %>%
     coord_flip()
 ```
 
-# 3. Conclusões
+# Conclusões
 
 * Baixa proporção de títulos potencialmente predatórios
 no QUALIS. Indica que o uso destes periódicos não é prática 
@@ -101,7 +101,7 @@ brasileira, por outro há uma grande vulnerabilidade do
 sistema de avaliação da CAPES à invasão por este tipo de 
 publicação.
 
-# 4.  Recomendações
+# Recomendações
 
 * Criar uma categoria separada do estrato QUALIS C para periódicos 
 potencialmente  predatórios, com critérios mínimos de triagem deste tipo de publicação.

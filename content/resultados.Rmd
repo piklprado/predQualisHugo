@@ -184,16 +184,15 @@ Mais importante, apesar de baixa a proporção mostra que na maioria das áreas 
 `r 100-round(100*median(tmp$C/tmp$tot.pred),1)`%. Ou seja, a maioria das áreas mantêm na avaliação cerca de 
 metade do títulos potencialmente predatórios.
 * Outro ponto importante é a grande heterogeneidade das áreas quanto a essa "detecção de potenciais predatórios". Apesar disso, não há uma tendência clara entre agrupamentos dessa áreas, como grandes áreas, colégios ou áreas mais aplicadas e básicas. Isso acontece porque em quase todos estes grupos há pelo menos uma área que foge ao padrão. Por exemplo, nas Agrárias, que têm em geral detecção baixa, Alimentos mostra valores altos. Já entre as Engenharias que têm valores mais altos, a Engenharia II é discrepante. 
-* Assim, o sistema QUALIS é muito vulnerável a periódicos predatórios. 
-* Hipotetizamos que os critérios de classificação nos estratos das áreas não são suficientes para detectar predatórios, por duas razões principais: (i) critério para estratos altos focado no fator de impacto e (ii) critérios para estrato médio focado em presença em bases de indexação, número de artigos da área na revista e critérios subjetivos. 
+* Assim, o sistema QUALIS é muito vulnerável a periódicos predatórios. Hipotetizamos que os critérios de classificação nos estratos das áreas não são suficientes para detectar predatórios, por duas razões principais: (i) critério para estratos altos focado no fator de impacto e (ii) critérios para estrato médio focado em presença em bases de indexação, número de artigos da área na revista e critérios subjetivos. 
 		* No primeiro caso, em geral os estratos mais altos são definidos por ter fator de impacto medido pelo JCR nos quartis mais altos de impacto dos periódicos da área. Isso pode excluir muitos predatórios, mas alguns que entraram na lista justamente por práticas questionáveis para aumentar o fator de impacto. Dois casos famosos são *Oncotarget* e *Aging*, ambos da editora comercial Impact Journals , editados por Mikhail V. Blagosklonnye. A página da editora é vazia (http://www.impactjournals.com/) e  há fortes indícios de que estes periódicos usem práticas condenáveis para aumentar impacto, sob o comando de Blagosklonnye [^2]. Estes dois periódicos e mais um da mesma editora, *Genes & Cancer* são A1 de várias áreas das Ciências da Vida. Buscamos agora exemplos análogos de outra áreas do conhecimento.
 		* No segundo caso, o critério de impacto é substituído ou ponderado pela mera presença em certas bases bibliográficas, além da WoS. SCOPUS, PubMed e Scielo são alguns exemplos. A presença de periódicos predatórios mesmo em bases como a SCOPUS indica que este critério é problemático. Reforça este argumento que cerca de 30% dos títulos de editoras apontadas como predatórias na lista de Bealls foram retirados da SCOPUS em 2017. Muitas áreas também usam como critério adicional para pontuar no QUALIS o quanto a área publica no periódico, o que evidentemente tem potencial para retroalimentar o uso de periódicos predatórios. Por fim, há vários critérios mais subjetivos de importância dos periódicos, e que muitas vezes não estão claros nos documentos de avaliação.
 * Um ponto importante é que a maioria dos periódicos potencialmente predatórios foi avaliada por mais de uma área, sendo que na maioria dos casos pelo menos uma área os classificou como "C". Vale também notar que nos documentos de área ou de avaliação não há menção explícita a nenhum dos critérios usados pela lista de Bealls ou de outros autores e instituições para detectar periódicos predatórios. 
-* Também importante notar que o estrato C também abriga periódicos sem evidências de práticas fraudulentas, e que apenas
+* Também importante notar que o estrato C inclui periódicos sem evidências de práticas fraudulentas, e que apenas
 têm circulação restrita, baixa relevância e/ou baixo impacto para uma dada área.
 
 
-# 3. Conclusões
+# Conclusões
 
 * Baixa proporção de título potencialmente predatórios
 no QUALIS. Indica que o uso destes periódicos não é prática 
@@ -207,7 +206,7 @@ brasileira, por outro há uma grande vulnerabilidade do
 sistema de avaliação da CAPES à invasão por este tipo de 
 publicação.
 
-# 4.  Recomendações
+# Recomendações
 
 * Criar uma categoria separada do estrato QUALIS C para periódicos 
 potencialmente  predatórios, com critérios mínimos de triagem deste tipo de publicação.
