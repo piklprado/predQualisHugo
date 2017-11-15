@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Periódicos predatórios no QUALIS</title>
+    <title>Periódicos predatórios no QUALIS</title>
     <link>/</link>
-    <description>Recent content in Home on Periódicos predatórios no QUALIS</description>
+    <description>Recent content on Periódicos predatórios no QUALIS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     
@@ -11,28 +11,25 @@
     
     
     <item>
-      <title>Lista interativa dos títulos potencialmente predatórios no QUALIS</title>
+      <title></title>
       <link>/lista/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/lista/</guid>
-      <description>A tabela abaixo permite filtrar os títulos potencialmente predatórios por área de conhecimento e estrato QUALIS, e buscar periódicos pelo título e INSS.
-Você pode também usar a caixa de busca para procurar um string em qualquer lugar da tabela.
- {&#34;x&#34;:{&#34;filter&#34;:&#34;top&#34;,&#34;filterHTML&#34;:&#34;\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n&#34;</description>
+      <description>Lista interativa dos títulos potencialmente predatórios no QUALIS            code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .</description>
     </item>
     
     <item>
-      <title>Metodologia</title>
+      <title></title>
       <link>/metodos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/metodos/</guid>
-      <description>1. Compilação de uma lista de periódicos potencialmente predatórios combinando as seguintes bases:  Lista de periódicos publicados pela editora OMICS, uma das maiores editoras reconhecidamente predatórias 1.
- Lista de Periódicos com práticas questionáveis criada por Jeffrey Beall. A lista foi tirada do ar2 mas há cópias disponíveis em vários sites, (e.g. http://beallslist.weebly.com/) . Extraímos dessa base de dados:  Standalone Journals List: lista de títulos isolados potencialmente predadores, conforme está na base de Beall; Periódicos no Scopus de editoras que estão na lista de Beall: periódicos incluídos na base Scopus de 2017 (https://www.</description>
+      <description>Metodologia       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .table th:not([align]) { text-align: left; }    .</description>
     </item>
     
     <item>
-      <title>Resultados completos da análise</title>
+      <title></title>
       <link>/resultados/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -41,13 +38,12 @@ Você pode também usar a caixa de busca para procurar um string em qualquer lug
     </item>
     
     <item>
-      <title>Resumo Executivo</title>
+      <title></title>
       <link>/resumo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/resumo/</guid>
-      <description>1. Proporção de periódicos predatórios no QUALIS Dos 26477 periódicos científicos na base QUALIS da CAPES pelo menos 1.8% são potencialmente predatórios.
- 2. Capacidade do QUALIS detectar predatórios  77.5 % dos títulos potencialmente predatórios foram corretamente classificados no estrato mais baixo (QUALIS C) por pelo menos uma área de conhecimento. No entanto 67 % dos títulos foram classificados nos estratos A e B por pelo menos uma área.  Proporção dos periódicos potencialmente predatórios por sua melhor e pior classificação nos estratos QUALIS: // jsData function gvisDataBarChartID23246616533 () { var data = new google.</description>
+      <description>Resumo Executivo       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .table th:not([align]) { text-align: left; }    .</description>
     </item>
     
   </channel>

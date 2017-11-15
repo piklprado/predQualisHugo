@@ -86,9 +86,9 @@ tmp %>%
 
 # 3. Conclusões
 
-* Baixa proporção de título potencialmente predatórios
+* Baixa proporção de títulos potencialmente predatórios
 no QUALIS. Indica que o uso destes periódicos não é prática 
-comum nos programas de pós-graduação.
+comum nos programas de pós-graduação brasileiros.
 * A eficiência para detectar periódicos 
 potencialmente predatórios varia muito entre áreas,
 mas em geral é baixa.
