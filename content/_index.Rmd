@@ -34,8 +34,11 @@ principais critérios para [Avaliação Quadrienal dos Programa de Pós-Graduaç
 feita pela CAPES.
 
 As coordenações de cada área de conhecimento da CAPES são responsáveis por 
-compilar os títulos de todos os periódicos e classificá-los em uma escala de relevância com os níveis
-A1, A2, B1 a B5 e C. Um mesmo título pode receber níveis diferentes em diferentes áreas. Para saber mais veja:
+compilar os títulos de todos os periódicos em que orientadores, estudantes e egressos
+dos programas da área publicaram artigos.
+Cada área então classifica cada periódico em uma escala de relevância que vai de
+A1 (mais alta), A2, B1 a B5 e C (mais baixa). 
+Um mesmo título pode receber classificações diferentes em diferentes áreas. Para saber mais veja:
 
 * Barata, R.C.B. 2016. Dez coisas que você deveria saber sobre o QUALIS. [Revista Bras. de Pós-Graduação.](http://ojs.rbpg.capes.gov.br/index.php/rbpg/article/view/947)
 * [Perguntas frequentes sobre o QUALIS](http://www.capes.gov.br/acessoainformacao/perguntas-frequentes/avaliacao-da-pos-graduacao/7422-qualis), do site da CAPES.
