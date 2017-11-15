@@ -4,7 +4,7 @@ title: Resumo Executivo
 
 ```{r setup, echo=FALSE, warning=FALSE, message=F}
 library(knitr)
-#library(ggplot2)
+library(ggplot2)
 library(VennDiagram)
 library(googleVis)
 op <- options(gvis.plot.tag='chart')
@@ -59,19 +59,50 @@ BC <- gvisBarChart(df1, xvar="crit", yvar=c("A1","A2","B1","B2","B3","B4","B5","
 plot(BC)
 ```
 
+##### Probabilidade de detecção de predatórios por área de conhecimento
+
+Esta probabilidade é dada pela proporção
+dos títulos potencialmente predatórios
+classificados no estrato QUALIS "C".
+
+Há muita variação entre áreas, mas na maioria
+a detecção está abaxo de 50%:
+
+```{r dotplot proportions, fig.height=6}
+f1 <- function(x,n)prop.test(x,n)$conf.int
+tmp <- n.pred2[n.pred2$tot.pred>5,]
+tmp$pC <- tmp$C/tmp$tot.pred
+tmp <- cbind(tmp,t(mapply(f1,tmp$C,tmp$tot.pred)))
+tmp$area <- factor(tmp$area, levels=tmp$area[order(tmp$pC)])
+names(tmp)[13:14] <- c("lower","upper")
+tmp %>%
+    ggplot(aes(area, pC)) +
+    geom_point() +
+    geom_linerange(aes(ymin=lower, ymax=upper)) +
+    ylab("Proportion of potential predatory in C stratum") +
+    xlab("Knowledge area") +
+    coord_flip()
+```
 
 # 3. Conclusões
 
-* Procedimentos de detecção de periódicos predatórios não estão
-incorporados no QUALIS. A pequena proporção destes periódicos
-no total de títulos nos quais os programas de PG brasileiros publicam
-deve estar mais relacionada a opções destes programas do que com a
-capacidade do sistema coibir ou prevenir isso. 
-* Nesta pequena fração a baixa capacidade do sistema de detectar estes periódicos como
-predatórios indica a vulnerabilidade do QUALIS aos predatórios.
+* Baixa proporção de título potencialmente predatórios
+no QUALIS. Indica que o uso destes periódicos não é prática 
+comum nos programas de pós-graduação.
+* A eficiência para detectar periódicos 
+potencialmente predatórios varia muito entre áreas,
+mas em geral é baixa.
+* Assim, se por um lado periódicos potencialmente 
+predatórios não são hoje um problema sério na pós-graduação 
+brasileira, por outro há uma grande vulnerabilidade do
+sistema de avaliação da CAPES à invasão por este tipo de 
+publicação.
 
 # 4.  Recomendações
 
-* Incluir no QUALIS  critérios explícitos de triagem de periódicos potencialmente predatórios; 
-* Recomendar às áreas que explicitem seus critérios para identificar predatórios; 
-* Criar procedimento para verificar discrepâncias entre áreas quanto à classificação em predatórios.
+* Criar uma categoria separada do estrato QUALIS C para periódicos 
+potencialmente  predatórios, com critérios mínimos de triagem deste tipo de publicação.
+* Solicitar a todas as áreas de conhecimento que adotem e explicitem seus critérios 
+específicos para identificar predatórios; 
+* Criar procedimento para verificar discrepâncias entre áreas quanto à classificação 
+na categoria de potenciais predatórios.

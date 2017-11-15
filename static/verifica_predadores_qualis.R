@@ -67,6 +67,9 @@ qualis$predatory[qualis$ISSN=="1840-3662"] <- FALSE
 qualis$titulo.abr[qualis$ISSN=="1520-6025"] <- paste(qualis$titulo.abr[qualis$ISSN=="1520-6025"],"no predatory")
 qualis$titulo.abr[qualis$ISSN=="0163-3864"] <- paste(qualis$titulo.abr[qualis$ISSN=="0163-3864"],"no predatory")
 qualis$titulo.abr[qualis$ISSN=="1840-3662"] <- paste(qualis$titulo.abr[qualis$ISSN=="1840-3662"],"no predatory")
+## Other titles that passed the check and are not potentially predatory
+exceptions <- read.csv2("../static/exceptions.csv", as.is=TRUE)
+qualis$predatory[qualis$title.abr%in%exceptions$title] <- FALSE
 ## Save a worksheet of the raw data
 write.csv2(qualis[,-(6:9)], file="../static/qualis_id_predadores.csv")
 
@@ -76,7 +79,7 @@ qualis2 <- qualis %>%
     summarise(N=n()) %>%
     as.data.frame()
 ## Which titles are predatory
-qualis2$pred <- qualis2$titulo.abr %in% beals$title2
+qualis2$pred <- (qualis2$titulo.abr %in% beals$title2)&!(qualis2$titulo.abr%in%exceptions$title)
 ## Titles from Beals list of Predatory publishers in Scopus list
 qualis2$predp <- qualis2$titulo.abr %in% sc.bealsp$title
 ## Titles from Beals list of Predatory publishers in Scopus list and that have been discontinued in Scopus

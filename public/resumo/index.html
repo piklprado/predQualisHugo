@@ -36,24 +36,24 @@
 <main>
 <div id="proporcao-de-periodicos-predatorios-no-qualis" class="section level1">
 <h1>1. Proporção de periódicos predatórios no QUALIS</h1>
-<p>Dos 26477 periódicos científicos na base QUALIS da CAPES pelo menos 1.9% são potencialmente predatórios.</p>
+<p>Dos 26477 periódicos científicos na base QUALIS da CAPES pelo menos 1.8% são potencialmente predatórios.</p>
 <p><img src="/resumo_files/figure-html/diagrama%20de%20venn-1.png" width="288" style="display: block; margin: auto;" /></p>
 </div>
 <div id="capacidade-do-qualis-detectar-predatorios" class="section level1">
 <h1>2. Capacidade do QUALIS detectar predatórios</h1>
 <ul>
-<li>76.8 % dos títulos potencialmente predatórios foram corretamente classificados no estrato mais baixo (QUALIS C) por pelo menos uma área de conhecimento.</li>
-<li>No entanto 67.4 % dos títulos foram classificados nos estratos A e B por pelo menos uma área.</li>
+<li>77.5 % dos títulos potencialmente predatórios foram corretamente classificados no estrato mais baixo (QUALIS C) por pelo menos uma área de conhecimento.</li>
+<li>No entanto 67 % dos títulos foram classificados nos estratos A e B por pelo menos uma área.</li>
 </ul>
 <div id="proporcao-dos-periodicos-potencialmente-predatorios-por-sua-melhor-e-pior-classificacao-nos-estratos-qualis" class="section level5">
 <h5>Proporção dos periódicos potencialmente predatórios por sua melhor e pior classificação nos estratos QUALIS:</h5>
 <!-- BarChart generated in R 3.4.2 by googleVis 0.6.2 package -->
-<!-- Tue Nov 14 19:32:28 2017 -->
+<!-- Tue Nov 14 22:21:26 2017 -->
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataBarChartID7c2b3e0f657 () {
+function gvisDataBarChartID23246616533 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -61,9 +61,9 @@ var datajson =
 "Melhor Classificação",
 8,
 21,
-37,
-27,
 34,
+26,
+32,
 96,
 108,
 160
@@ -73,11 +73,11 @@ var datajson =
 1,
 1,
 7,
-8,
-21,
+7,
 20,
-56,
-377
+18,
+55,
+376
 ] 
 ];
 data.addColumn('string','crit');
@@ -94,15 +94,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartBarChartID7c2b3e0f657() {
-var data = gvisDataBarChartID7c2b3e0f657();
+function drawChartBarChartID23246616533() {
+var data = gvisDataBarChartID23246616533();
 var options = {};
 options["allowHtml"] = true;
 options["isStacked"] = "percent";
 options["legend.title"] = "Estrato QUALIS";
 
     var chart = new google.visualization.BarChart(
-    document.getElementById('BarChartID7c2b3e0f657')
+    document.getElementById('BarChartID23246616533')
     );
     chart.draw(data,options);
     
@@ -126,9 +126,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartBarChartID7c2b3e0f657);
+callbacks.push(drawChartBarChartID23246616533);
 })();
-function displayChartBarChartID7c2b3e0f657() {
+function displayChartBarChartID23246616533() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -151,26 +151,33 @@ callbacks.shift()();
 // jsFooter
 </script>
 <!-- jsChart -->
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBarChartID7c2b3e0f657"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBarChartID23246616533"></script>
 <!-- divChart -->
-<div id="BarChartID7c2b3e0f657" style="width: 500; height: automatic;">
+<div id="BarChartID23246616533" style="width: 500; height: automatic;">
 
 </div>
+</div>
+<div id="probabilidade-de-deteccao-de-predatorios-por-area-de-conhecimento" class="section level5">
+<h5>Probabilidade de detecção de predatórios por área de conhecimento</h5>
+<p>Esta probabilidade é dada pela proporção dos títulos potencialmente predatórios classificados no estrato QUALIS “C”.</p>
+<p>Há muita variação entre áreas, mas na maioria a detecção está abaxo de 50%:</p>
+<p><img src="/resumo_files/figure-html/dotplot%20proportions-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <div id="conclusoes" class="section level1">
 <h1>3. Conclusões</h1>
 <ul>
-<li>Procedimentos de detecção de periódicos predatórios não estão incorporados no QUALIS. A pequena proporção destes periódicos no total de títulos nos quais os programas de PG brasileiros publicam deve estar mais relacionada a opções destes programas do que com a capacidade do sistema coibir ou prevenir isso.</li>
-<li>Nesta pequena fração a baixa capacidade do sistema de detectar estes periódicos como predatórios indica a vulnerabilidade do QUALIS aos predatórios.</li>
+<li>Baixa proporção de título potencialmente predatórios no QUALIS. Indica que o uso destes periódicos não é prática comum nos programas de pós-graduação.</li>
+<li>A eficiência para detectar periódicos potencialmente predatórios varia muito entre áreas, mas em geral é baixa.</li>
+<li>Assim, se por um lado periódicos potencialmente predatórios não são hoje um problema sério na pós-graduação brasileira, por outro há uma grande vulnerabilidade do sistema de avaliação da CAPES à invasão por este tipo de publicação.</li>
 </ul>
 </div>
 <div id="recomendacoes" class="section level1">
 <h1>4. Recomendações</h1>
 <ul>
-<li>Incluir no QUALIS critérios explícitos de triagem de periódicos potencialmente predatórios;</li>
-<li>Recomendar às áreas que explicitem seus critérios para identificar predatórios;</li>
-<li>Criar procedimento para verificar discrepâncias entre áreas quanto à classificação em predatórios.</li>
+<li>Criar uma categoria separada do estrato QUALIS C para periódicos potencialmente predatórios, com critérios mínimos de triagem deste tipo de publicação.</li>
+<li>Solicitar a todas as áreas de conhecimento que adotem e explicitem seus critérios específicos para identificar predatórios;</li>
+<li>Criar procedimento para verificar discrepâncias entre áreas quanto à classificação na categoria de potenciais predatórios.</li>
 </ul>
 </div>
 
