@@ -69,7 +69,7 @@ qualis$titulo.abr[qualis$ISSN=="0163-3864"] <- paste(qualis$titulo.abr[qualis$IS
 qualis$titulo.abr[qualis$ISSN=="1840-3662"] <- paste(qualis$titulo.abr[qualis$ISSN=="1840-3662"],"no predatory")
 ## Other titles that passed the check and are not potentially predatory
 exceptions <- read.csv2("../static/exceptions.csv", as.is=TRUE)
-qualis$predatory[qualis$title.abr%in%exceptions$title] <- FALSE
+qualis$predatory[qualis$titulo.abr%in%exceptions$title] <- FALSE
 ## Save a worksheet of the raw data
 write.csv2(qualis[,-(6:9)], file="../static/qualis_id_predadores.csv")
 
