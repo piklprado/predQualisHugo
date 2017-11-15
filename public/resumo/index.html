@@ -34,6 +34,18 @@
 </div>
 
 <main>
+<div id="TOC">
+<ul>
+<li><a href="#proporcao-de-periodicos-predatorios-no-qualis">1. Proporção de periódicos predatórios no QUALIS</a></li>
+<li><a href="#capacidade-do-qualis-detectar-predatorios">2. Capacidade do QUALIS detectar predatórios</a><ul>
+<li><a href="#proporcao-dos-periodicos-potencialmente-predatorios-por-sua-melhor-e-pior-classificacao-nos-estratos-qualis">Proporção dos periódicos potencialmente predatórios por sua melhor e pior classificação nos estratos QUALIS:</a></li>
+<li><a href="#probabilidade-de-deteccao-de-predatorios-por-area-de-conhecimento">Probabilidade de detecção de predatórios por área de conhecimento</a></li>
+</ul></li>
+<li><a href="#conclusoes">3. Conclusões</a></li>
+<li><a href="#recomendacoes">4. Recomendações</a></li>
+</ul>
+</div>
+
 <div id="proporcao-de-periodicos-predatorios-no-qualis" class="section level1">
 <h1>1. Proporção de periódicos predatórios no QUALIS</h1>
 <p>Dos 26477 periódicos científicos na base QUALIS da CAPES pelo menos 1.8% são potencialmente predatórios.</p>
@@ -45,15 +57,15 @@
 <li>77.5 % dos títulos potencialmente predatórios foram corretamente classificados no estrato mais baixo (QUALIS C) por pelo menos uma área de conhecimento.</li>
 <li>No entanto 67 % dos títulos foram classificados nos estratos A e B por pelo menos uma área.</li>
 </ul>
-<div id="proporcao-dos-periodicos-potencialmente-predatorios-por-sua-melhor-e-pior-classificacao-nos-estratos-qualis" class="section level5">
-<h5>Proporção dos periódicos potencialmente predatórios por sua melhor e pior classificação nos estratos QUALIS:</h5>
+<div id="proporcao-dos-periodicos-potencialmente-predatorios-por-sua-melhor-e-pior-classificacao-nos-estratos-qualis" class="section level3">
+<h3>Proporção dos periódicos potencialmente predatórios por sua melhor e pior classificação nos estratos QUALIS:</h3>
 <!-- BarChart generated in R 3.4.2 by googleVis 0.6.2 package -->
-<!-- Tue Nov 14 22:37:23 2017 -->
+<!-- Tue Nov 14 22:44:14 2017 -->
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataBarChartID360f63e6fa49 () {
+function gvisDataBarChartID3e5f2e395fd9 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -94,15 +106,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartBarChartID360f63e6fa49() {
-var data = gvisDataBarChartID360f63e6fa49();
+function drawChartBarChartID3e5f2e395fd9() {
+var data = gvisDataBarChartID3e5f2e395fd9();
 var options = {};
 options["allowHtml"] = true;
 options["isStacked"] = "percent";
 options["legend.title"] = "Estrato QUALIS";
 
     var chart = new google.visualization.BarChart(
-    document.getElementById('BarChartID360f63e6fa49')
+    document.getElementById('BarChartID3e5f2e395fd9')
     );
     chart.draw(data,options);
     
@@ -126,9 +138,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartBarChartID360f63e6fa49);
+callbacks.push(drawChartBarChartID3e5f2e395fd9);
 })();
-function displayChartBarChartID360f63e6fa49() {
+function displayChartBarChartID3e5f2e395fd9() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -151,14 +163,14 @@ callbacks.shift()();
 // jsFooter
 </script>
 <!-- jsChart -->
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBarChartID360f63e6fa49"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBarChartID3e5f2e395fd9"></script>
 <!-- divChart -->
-<div id="BarChartID360f63e6fa49" style="width: 500; height: automatic;">
+<div id="BarChartID3e5f2e395fd9" style="width: 500; height: automatic;">
 
 </div>
 </div>
-<div id="probabilidade-de-deteccao-de-predatorios-por-area-de-conhecimento" class="section level5">
-<h5>Probabilidade de detecção de predatórios por área de conhecimento</h5>
+<div id="probabilidade-de-deteccao-de-predatorios-por-area-de-conhecimento" class="section level3">
+<h3>Probabilidade de detecção de predatórios por área de conhecimento</h3>
 <p>Esta probabilidade é dada pela proporção dos títulos potencialmente predatórios classificados no estrato QUALIS “C”.</p>
 <p>Há muita variação entre áreas, mas na maioria a detecção está abaxo de 50%:</p>
 <p><img src="/resumo_files/figure-html/dotplot%20proportions-1.png" width="672" style="display: block; margin: auto;" /></p>

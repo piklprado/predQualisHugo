@@ -1,5 +1,8 @@
 ---
 title: Resumo Executivo
+output:
+  blogdown::html_page:
+    toc: true
 ---
 
 ```{r setup, echo=FALSE, warning=FALSE, message=F}
@@ -45,7 +48,7 @@ foram corretamente classificados no estrato mais baixo (QUALIS C) por pelo menos
 `r round(100*sum(pred.titles$estrato.max!="C")/nrow(pred.titles),1)` %  dos títulos
 foram classificados nos estratos A e B por pelo menos uma área.
 
-##### Proporção dos periódicos potencialmente predatórios por sua melhor e pior classificação nos estratos QUALIS:
+### Proporção dos periódicos potencialmente predatórios por sua melhor e pior classificação nos estratos QUALIS:
 
 ```{r barplot prop pred, results='asis', tidy=FALSE}
 t1 <- table(pred.titles$estrato.max)
@@ -59,7 +62,7 @@ BC <- gvisBarChart(df1, xvar="crit", yvar=c("A1","A2","B1","B2","B3","B4","B5","
 plot(BC)
 ```
 
-##### Probabilidade de detecção de predatórios por área de conhecimento
+### Probabilidade de detecção de predatórios por área de conhecimento
 
 Esta probabilidade é dada pela proporção
 dos títulos potencialmente predatórios
